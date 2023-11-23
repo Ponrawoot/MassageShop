@@ -24,7 +24,6 @@ function RegistrationForm() {
       );
       // Handle successful registration, e.g., show a success message
       console.log("User registered successfully:", registrationResult);
-      // router.back()
     } catch (error) {
       // Handle registration error, e.g., show an error message
       console.error("Failed to register user:", error.message);

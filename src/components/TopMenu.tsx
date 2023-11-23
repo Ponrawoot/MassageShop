@@ -21,7 +21,7 @@ export default async function TopMenu() {
         sizes="100vh"
       />
       <div className="my-9 ml-5 text-xl text-b font-bold">ZenSerenity Massage Haven</div>
-      <TopMenuItem title="Book" pageRef="/book" />
+      <TopMenuItem title="Home" pageRef="/"/>
       <TopMenuItem title="Manage Shop" pageRef="/shop"/>
       <div className='mx-5'></div>
       <TopMenuItem title="Manage Booking" pageRef="/booking"/>

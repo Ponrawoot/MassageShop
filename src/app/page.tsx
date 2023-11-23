@@ -47,14 +47,17 @@ export default function Home() {
       </p>
     </div>
   </div>
-  <h1 className='text-2xl font-semibold text-center my'>Shop List</h1>
-  <div className=" justify-center my-5">
-  {shops.map(shop => (
-    <Link key={shop.id} href={`/${shop.id}`} >
-      <ShopCard shopName={shop.name} imgSrc={shop.picture} />
-    </Link>
-  ))}
-</div>
+  <h1 className='text-4xl font-bold text-center my-10'>Shop List</h1>
+  <h1 className='text-2xl font-semibold text-center my-10'>You can view details and book by clicking on the shop card. Don't forget to log in!</h1>
+  <div className="flex flex-wrap  space-x-10">
+      {shops.map((shop) => (
+        <Link key={shop.id} href={`/${shop.id}` } className="no-underline">
+          <a className="w-1/4 mb-4"> {/* 20% width, margin-bottom for spacing */}
+            <ShopCard shopName={shop.name} imgSrc={shop.picture} />
+          </a>
+        </Link>
+      ))}
+    </div>
      
     </main>
   )
